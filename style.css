@@ -1,112 +1,95 @@
-*{
+* {
     margin: 0;
-    padding: 0%;
+    padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
-.banner{
+
+.banner {
     width: 100%;
     height: 100vh;
     background-image: 
-    linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(background.jpg);
     background-size: cover;
     background-position: center;
-}
-.navbar{
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
-.logo{
-    width: 100px;
-    cursor: pointer;
-
-}
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20;
-    position: relative;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-}
-.navbar ul li::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #939600;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-
-}
-.navbar ul li:hover::after{
-    width: 80px;
-
-}
-.content{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    justify-content: center;
     text-align: center;
     color: #fff;
+    padding: 20px;
 }
-.content h1{
-    font-size: 70px;
-    margin-top: 80px;
-}
-.content p{
-    font-weight: 100;
-    margin: 20px auto;
-    line-height: 25px;
 
+.navbar {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
 }
-button{
-    width:200px;
+
+.logo {
+    width: 180px; /* Made the logo bigger */
+    cursor: pointer;
+}
+
+.content {
+    max-width: 900px;
+}
+
+.content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    width: 270px;
     padding: 15px 0;
     text-align: center;
-    margin: 0px;
-    border-radius: 25px;
+    border-radius: 30px;
+    font-size: 18px;
     font-weight: bold;
     border: 2px solid #939600;
     background: transparent;
     color: #fff;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-span{
-    background: #939600;
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-}
-button:hover span{
-    width: 100%;
-}
-button:hover{
-    border: none;
-}
-.button ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20;
-    position: relative;
-}
-.button ul li b{
     text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.btn:hover {
+    background: #939600;
+    border: 2px solid #939600;
     color: #fff;
-    text-transform: uppercase;
+}
+
+.email {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.email a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.email a:hover {
+    color: #939600;
 }

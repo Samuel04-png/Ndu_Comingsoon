@@ -7,9 +7,9 @@
 
 .banner {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: 
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(background.jpg);
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(background.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -34,7 +34,7 @@
 }
 
 .content {
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .content h1 {
@@ -48,32 +48,37 @@
     font-size: 20px;
     font-weight: 300;
     line-height: 1.8;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    padding: 0 20px;
 }
 
-.button-container {
+.button-row {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 35px;
 }
 
-.button-container .btn + .btn {
-    margin-top: 10px;
+@media (min-width: 768px) {
+    .button-row {
+        flex-direction: row;
+    }
 }
 
 .btn {
-    display: inline-block;
-    width: 270px;
-    padding: 15px 0;
+    padding: 15px 25px;
     text-align: center;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     border: 2px solid #939600;
     background: transparent;
     color: #fff;
     text-decoration: none;
     transition: all 0.4s ease;
+    width: 300px;
 }
 
 .btn:hover {
@@ -83,7 +88,7 @@
 }
 
 .contact-info {
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 18px;
     line-height: 1.8;
 }

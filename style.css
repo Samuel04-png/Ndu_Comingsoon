@@ -29,7 +29,7 @@
 }
 
 .logo {
-    width: 180px; /* Made the logo bigger */
+    width: 180px;
     cursor: pointer;
 }
 
@@ -57,6 +57,10 @@
     align-items: center;
 }
 
+.button-container .btn + .btn {
+    margin-top: 10px;
+}
+
 .btn {
     display: inline-block;
     width: 270px;
@@ -78,18 +82,19 @@
     color: #fff;
 }
 
-.email {
-    margin-top: 15px;
+.contact-info {
+    margin-top: 30px;
     font-size: 18px;
+    line-height: 1.8;
 }
 
-.email a {
+.contact-info a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.email a:hover {
+.contact-info a:hover {
     color: #939600;
 }

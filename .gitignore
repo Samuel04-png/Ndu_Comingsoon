@@ -1,0 +1,65 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+flutter_*.png
+linked_*.ds
+unlinked.ds
+unlinked_spec.ds
+
+# Android related
+android/
+*.jks
+*.keystore
+
+# iOS related
+ios/
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+**/*sync/
+.sconsign.dblite
+.tags*
+**/.vagrant/
+**/DerivedData/
+**/Icon?
+**/Pods/
+**/.symlinks/
+**/profile
+**/xcuserdata
+**/.generated/
+Flutter/App.framework
+Flutter/Flutter.framework
+Flutter/Flutter.podspec
+Flutter/Generated.xcconfig
+Flutter/ephemeral
+Flutter/app.flx
+Flutter/app.zip
+Flutter/flutter_assets/
+Flutter/flutter_export_environment.sh
+ServiceDefinitions.json
+Runner.entitlements
+Runner-Debug.entitlements
+Runner-Release.entitlements
+
+# Project source files (not needed for deployment)
+lib/
+web/
+pubspec.yaml
+pubspec.lock
+analysis_options.yaml
+*.md
+!README.md
+firebase.json
+firestore.*
+architecture.md
+
+# Allow web build files (icons directory from build/web)
+!icons/
+
